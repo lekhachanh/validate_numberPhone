@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function CheckPhoneNumber(str) {
+        check = /^[84-]+[0-9]{9,10}$/;
+        if(check.test(str)) {
+            alert("Số điện thoại hợp lệ");
+        }else {
+            alert("Số điện thoại không hợp lệ");
+        }
+    }
+    CheckPhoneNumber("84-832341723");
+    CheckPhoneNumber("84-8323417222222");
+</script>
+</body>
+</html>
